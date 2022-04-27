@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nested_function</title>
+</head>
+<body>
+    <script>
+        function first(){
+
+            //local_scopefirst
+            let variable = "first";
+
+            function second(){
+                console.info(firstvaiable);
+                //bisa diakses oleh variabel global
+            }
+            second;
+        }
+        first();
+    </script>
+</body>
+</html>

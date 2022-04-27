@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function_parameter</title>
+</head>
+<body>
+    <script>
+        function sayhello(name){
+            document.writeln(`<p>Hello${name}</p>`);
+
+        }
+        sayHello("Sukma");
+        const say = sayhello;
+        say("sukma");
+
+        function giveName(callback){
+            callback("sukma");//sayHello("sukma");
+
+        }
+        givemeName(sayHello)
+        givemeName(say);
+    </script>
+</body>
+</html>
